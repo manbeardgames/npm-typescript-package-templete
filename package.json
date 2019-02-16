@@ -1,6 +1,6 @@
 {
   "name": "npm-typescript-package-templete",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A templete to use when creating NPM Typescritp bases packages.  Includes tsc compiler, prettier, linting, and jest for testing.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
