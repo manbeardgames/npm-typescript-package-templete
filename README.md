@@ -15,17 +15,18 @@ The following modules are included using the `--save-dev` flag
 | @types/jest | Type definitions for jest | https://www.npmjs.com/package/@types/jest |
 
 # Scripts
-The following scripts are configured in `pacakage.json`
-| Script | Command | Description |
-|---|---|---|
-| test | `npm test` | Executes all tests that are in the `/src/__tests__` directory |
-| build | `npm run build` | Compiles the Typescript in the `/src` directory |
-| format | `npm run format` | Runs the Prettier code formatter against the code |
-| lint | `npm run lint` | Executes tslint against the code |
+The following scripts are configured in `pacakage.json`  
+
+| Script | Command | Description |  
+|---|---|---|  
+| test | `npm test` | Executes all tests that are in the `/src/__tests__` directory |  
+| build | `npm run build` | Compiles the Typescript in the `/src` directory |  
+| format | `npm run format` | Runs the Prettier code formatter against the code |  
+| lint | `npm run lint` | Executes tslint against the code |  
 | prepare | Runs before the package is packed and published, and also on local `npm install`  | When executed, will build our source |
-| prepublishOnly | Runs BEFORE `prepare` and ONLy on `npm publish` | When executed, this will run our configured tests and linting to make sure we don't publish bad code. |
-| preversion | Runs before bumping a new package version with `npm vesion` | WHen executed, thi will run linting to ensure we're not bumping the version up with bad code |
-| version | `npm version [<newversion> \| major \| minor \| patch \| premajor \| preminor \| prepatch \| prerelease [--preid=<prerelease-id>\ \| from-git]` | When a new version is bumped, after it's bumpted, the script will execute. The script will run the formatter against our code so no ugly code is commited and then perform a `git add-A src` |
-| postversion | This will run AFTER bumping the pacakge version, and AFTER commit | This will push the commit and the tags |
+| prepublishOnly | Runs BEFORE `prepare` and ONLy on `npm publish` | When executed, this will run our configured tests and linting to make sure we don't publish bad code. |  
+| preversion | Runs before bumping a new package version with `npm vesion` | WHen executed, thi will run linting to ensure we're not bumping the version up with bad code |  
+| version | `npm version [<newversion> \| major \| minor \| patch \| premajor \| preminor \| prepatch \| prerelease [--preid=<prerelease-id>\ \| from-git]` | When a new version is bumped, after it's bumpted, the script will execute. The script will run the formatter against our code so no ugly code is commited and then perform a `git add-A src` |  
+| postversion | This will run AFTER bumping the pacakge version, and AFTER commit | This will push the commit and the tags |  
 
 
