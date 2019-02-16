@@ -1,6 +1,6 @@
 {
   "name": "npm-typescript-package-templete",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A templete to use when creating NPM Typescritp bases packages.  Includes tsc compiler, prettier, linting, and jest for testing.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -19,7 +19,10 @@
     "type": "git",
     "url": "git+https://github.com/manbeardgames/npm-typescript-package-templete.git"
   },
-  "keywords": ["NPM", "TypeScript"],
+  "keywords": [
+    "NPM",
+    "TypeScript"
+  ],
   "author": "Christohper Whitley",
   "license": "MIT",
   "bugs": {
