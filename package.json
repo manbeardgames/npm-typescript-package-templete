@@ -1,0 +1,41 @@
+{
+  "name": "npm-typescript-package-templete",
+  "version": "1.0.0",
+  "description": "A templete to use when creating NPM Typescritp bases packages.  Includes tsc compiler, prettier, linting, and jest for testing.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && pit push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manbeardgames/npm-typescript-package-templete.git"
+  },
+  "keywords": ["NPM", "TypeScript"],
+  "author": "Christohper Whitley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manbeardgames/npm-typescript-package-templete/issues"
+  },
+  "homepage": "https://github.com/manbeardgames/npm-typescript-package-templete#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.5",
+    "jest": "^24.1.0",
+    "prettier": "^1.16.4",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
