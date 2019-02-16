@@ -1,4 +1,4 @@
-import { Example } from '../index';
+import { Hello } from '../index';
 test('Hello World', () => {
-  expect(Example('World')).toBe('Hello World');
+  expect(Hello('World')).toBe('Hello World');
 });
